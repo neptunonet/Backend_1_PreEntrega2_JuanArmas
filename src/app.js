@@ -35,6 +35,11 @@ app.use("/api/carts", routerCarts);
 app.use("/api/products", routerProducts);
 app.use("/", routerViewHome);
 
+// Control de rutas inexistentes
+app.use("*", (req, res) => {
+    res.status(404).render("error404", { title: "Error 404" });
+});
+
 
 // Se levanta el servidor oyendo en el puerto definido
 const httpServer = app.listen(PORT, () => {

@@ -23,13 +23,24 @@
 	},
 	{
 		"id": 3,
-		"title": "Producto C",
-		"description": "Descripción del producto C",
-		"code": "PROD003",
-		"price": "500",
+		"title": "Producto Nuevo",
+		"description": "Producto sin descripción",
+		"code": 3,
+		"price": null,
 		"status": true,
-		"stock": 90,
-		"category": "Category C",
-		"thumbnail": "file_9491_07112024_144008.jpg"
+		"stock": 22,
+		"category": "Categoría sin especificar",
+		"thumbnail": null
+	},
+	{
+		"id": 4,
+		"title": "Mas Productos Para Json",
+		"description": "Producto sin descripción",
+		"code": 4,
+		"price": null,
+		"status": true,
+		"stock": 44,
+		"category": "Categoría sin especificar",
+		"thumbnail": null
 	}
 ]

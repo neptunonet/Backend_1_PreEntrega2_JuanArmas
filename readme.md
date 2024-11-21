@@ -1,8 +1,8 @@
 # PreEntrega 2 - Juan Ignacio Armas
 
-## Programación Backend I: Desarrollo Avanzado de Backend - Comisión 70365
+## Programación Backend I: Desarrollo Avanzado de Backend 
 
-### E-commerce Websockets y vistas a nuestro servidor actual.
+## Comisión 70365
 
 ## Descripción del Proyecto
 

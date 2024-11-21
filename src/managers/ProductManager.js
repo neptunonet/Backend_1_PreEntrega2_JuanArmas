@@ -2,11 +2,12 @@ import paths from "../utils/paths.js";
 import { readJsonFile, writeJsonFile, deleteFile } from "../utils/fileHandler.js";
 import { generateId } from "../utils/collectionHandler.js";
 import { convertToBoolean } from "../utils/converter.js";
-import ErrorManager from "./ErrorManager.js";
+import  ErrorManager  from "./ErrorManager.js";
 
 export default class ProductManager {
     #jsonFilename;
     #products;
+
 
     constructor() {
         this.#jsonFilename = "products.json";
@@ -52,6 +53,7 @@ export default class ProductManager {
             if (!title ||!status ||!stock ) {
                 throw new ErrorManager("Faltan datos obligatorios", 400);
             }
+        
         //Se comenta para evitar que se requiera una imagen
         //    if (!file?.filename) {
         //         throw new ErrorManager("Falta el archivo de la imagen", 400);
@@ -66,7 +68,7 @@ export default class ProductManager {
                 status: convertToBoolean(status)?? true,
                 stock: Number(stock),
                 category: category ?? "Categoría sin especificar",
-                thumbnail: file?.filename,
+                thumbnail: file?.filename ?? null
             };
 
             this.#products.push(product);

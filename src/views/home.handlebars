@@ -1,19 +1,25 @@
-<header>
-    <h1>Inicio</h1>
-    <a href="http://localhost:8080/realTimeProducts" target="_blank" rel="noopener noreferrer">Productos en Tiempo Real</a>
+<header class="header">
+    <nav class="header__nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/realTimeProducts" class="nav-link">ProductosEnTiempoReal</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main>
-    <section>
-        <h3>Productos</h3>
+<main class="main-content">
+    <section class="products-section">
+        <h2 class="section-title">Productos</h2>
         <p>Aquí encontrarás los productos disponibles.</p>
         <div class="products">
-            <div class="products__list">
-                <ul class="products__list__item" id="products-list"></ul>
-            </div>
-            <button id="btn-refresh-products-list">Recargar Lista</button>
+            <ul class="products__list" id="products-list"></ul>
+            <button id="btn-refresh-products-list" class="btn btn-secondary">Recargar Lista</button>
         </div>
     </section>
 </main>
+
+<footer class="footer">
+    <p>Todos los derechos reservados &copy; 2023</p>
+</footer>
 
 <script src="/api/public/js/products.js"></script>

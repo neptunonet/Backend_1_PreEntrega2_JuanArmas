@@ -31,15 +31,5 @@
 		"stock": 90,
 		"category": "Category C",
 		"thumbnail": "file_9491_07112024_144008.jpg"
-	},
-	{
-		"id": 4,
-		"title": "Producto AAA",
-		"description": "Producto sin descripción",
-		"code": 4,
-		"price": null,
-		"status": true,
-		"stock": 33,
-		"category": "Categoría sin especificar"
 	}
 ]

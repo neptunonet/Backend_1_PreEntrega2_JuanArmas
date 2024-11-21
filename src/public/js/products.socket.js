@@ -20,7 +20,6 @@ productsForm.onsubmit = (event) => {
     const form = event.target;
     const formData = new FormData(form);
     errorMessage.innerText = "";
-    console.log(formData);
 
     form.reset();
 

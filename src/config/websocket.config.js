@@ -18,7 +18,6 @@ export const config = (httpServer) => {
         socket.on("insert-product", async (data) => {
             try {
                 await productManager.insertOne(data);
-                console.log(data);
                 
                 // Envía la lista de productos actualizada después de insertar
                 socketServer.emit("products-list", { products: await productManager.getAll() });

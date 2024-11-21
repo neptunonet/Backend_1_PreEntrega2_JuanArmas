@@ -1,40 +1,49 @@
-<header>
-    <h1>INICIO - productos en Tiempo Real</h1>
+<header class="header">
+    <nav class="header__nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/realTimeProducts" class="nav-link">ProductosEnTiempoReal</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main>
-    <section>
-        <h3>Productos</h3>
+<main class="main-content">
+    <section class="products-section">
+        <h2 class="section-title">Productos en Tiempo Real</h2>
+        <p>Aquí puedes ver, agregar y eliminar productos en tiempo real.</p>
         <div class="products">
-            <div class="products__list">
-                <ul class="products__list__item" id="products-list"></ul>
-            </div>
+            <ul class="products__list" id="products-list"></ul>
         </div>
     </section>
 
-    <section>
-        <h3>Formulario de Productos</h3>
+    <section class="form-section">
+        <h2 class="section-title">Agregar Producto</h2>
         <form class="products__form" id="products-form">
-            <input type="text" name="title" placeholder="Nombre del producto">
-            <div>¿Está activo?<input type="checkbox" name="status"></div>
-            <input type="number" name="stock" placeholder="Stock del producto">
-
-            <input type="submit" value="Guardar" style="width: 100%">
+            <input type="text" name="title" placeholder="Nombre del producto" required>
+            <div class="form-group">
+                <label for="status">¿Está activo?</label>
+                <input type="checkbox" id="status" name="status">
+            </div>
+            <input type="number" name="stock" placeholder="Stock del producto" required>
+            <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
     </section>
 
-    <section>
-        <h3>Eliminación de productos</h3>
+    <section class="delete-section">
+        <h2 class="section-title">Eliminar Producto</h2>
         <div class="products__delete">
-            <input type="number" class="products__delete__input" id="input-product-id"
-                placeholder="ID del producto">
-            <button id="btn-delete-product">Eliminar</button>
+            <input type="number" class="products__delete__input" id="input-product-id" placeholder="ID del producto" required>
+            <button id="btn-delete-product" class="btn btn-danger">Eliminar</button>
         </div>
     </section>
 
     <p class="error-message" id="error-message"></p>
 </main>
 
-{{!-- El script de socket.io debe estar antes que home.js --}}
+<footer class="footer">
+    <p>Todos los derechos reservados &copy; 2023</p>
+</footer>
+
+{{!-- El script de socket.io debe estar antes que products.socket.js --}}
 <script src="/socket.io/socket.io.js"></script>
 <script src="/api/public/js/products.socket.js"></script>

@@ -1,0 +1,45 @@
+[
+	{
+		"id": 1,
+		"title": "Producto A",
+		"description": "Descripción del producto A",
+		"code": "PROD001",
+		"price": 100,
+		"status": true,
+		"stock": 100,
+		"category": "Category A",
+		"thumbnail": "file_5859_07112024_144104.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Producto B",
+		"description": "Descripción del producto B",
+		"code": "PROD002",
+		"price": 200,
+		"status": false,
+		"stock": 50,
+		"category": "Category B",
+		"thumbnail": "file_5162_07112024_144058.jpg"
+	},
+	{
+		"id": 3,
+		"title": "Producto C",
+		"description": "Descripción del producto C",
+		"code": "PROD003",
+		"price": "500",
+		"status": true,
+		"stock": 90,
+		"category": "Category C",
+		"thumbnail": "file_9491_07112024_144008.jpg"
+	},
+	{
+		"id": 4,
+		"title": "Producto AAA",
+		"description": "Producto sin descripción",
+		"code": 4,
+		"price": null,
+		"status": true,
+		"stock": 33,
+		"category": "Categoría sin especificar"
+	}
+]
